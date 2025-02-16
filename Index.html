@@ -372,87 +372,57 @@ replayAnimations(); }, 8000); function replayAnimations() { var banner = documen
 </style>
 </section> <div>
 <section>
+<style>
+div.gallery {border: 1px solid #ccc;}
+div.gallery:hover {border: 1px solid #777;}
+div.gallery img {width: 100%; height: auto;}
+div.desc {padding: 15px; text-align: center;}
+* {box-sizing: border-box;}
+.responsive { padding: 0 6px; float: left; width: 24.99999%;}
+@media only screen and (max-width: 700px) {.responsive {width: 49.99999%; margin: 6px 0;}}
+@media only screen and (max-width: 500px) {.responsive {width: 100%;}}
+.clearfix:after {content: ""; display: table; clear: both;}
+</style>
 <body>
-
-<div class="rowbb">
-  <div class="columncc">
-    <img src="images/SouthAfrican1864.jpg" width="150" height="100";> 
-    <img src="images/Dr_Kaunda.jpg" width="150" height="100";> 
-    <img src="images/mandela.jpg" width="150" height="100";> 
-    <img src=".jpg" ;>
-    <img src=".jpg" ;>
-    <img src=".jpg" ;>
-    <img src=".jpg" ";>
-  </div>
-  <div class="columnbb">
-    <img src=".jpg" ;>
-    <img src="oc.jpg" ;>
-    <img src="w.jpg" ";>
-    <img src="m.jpg" ;>
-    <img src="r.jpg" ;>
-    <img src="ur.jpg" ;>
-  </div>
-  <div class="columncb">
-    <img src=".jpg" ;>
-    <img src=".jpg" ;>
-    <img src=".jpg" ;>
-    <img src=".jpg" ;>
-    <img src=".jpg" ;>
-    <img src=".jpg"";>
-    <img src=".jpg" ;>
-  </div>
-  <div class="columnty">
-    <img src=".jpg" width="150" height="100";>
-    <img src=".jpg" width="150" height="100";>
-    <img src=".jpg" width="150" height="100";>
-    <img src=".jpg" width="150" height="100";>
-    <img src=".jpg" width="150" height="100";>
-    <img src="r.jpg" width="150" height="100";>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/SouthAfrican1864.jpg">
+      <img src="images/SouthAfrican1864.jpg" width="150" height="100";>
+    </a>
+    <div class="desc">1864</div>
   </div>
 </div>
-</body>
-<style>
-.rowrowbb {display: flex; flex-wrap: wrap;padding: 0 4px;}
-#columncc {flex: 50%; padding: 0 4px;}
-#columnbb {flex: 50%; padding: 0 4px;}
-#columncb{flex: 50%; padding: 0 4px;}
-#columnty{flex: 50%; padding: 0 4px;}
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Dr_Kaunda.jpg">
+      <img src="images/Dr_Kaunda.jpg" width="150" height="100";> 
+    </a>
+    <div class="desc">Dr K Kaunda </div>
+  </div>
+</div>
 
-#columncc img {margin-top: 8px; vertical-align: middle;}
-#columnbb img {margin-top: 8px; vertical-align: middle;}
-#columncb img {margin-top: 8px; vertical-align: middle;}
-#columncc img {margin-top: 8px; vertical-align: middle;}
-</style>
-<script>
-var elements = document.getElementsByClassName("columncc");
-var elements = document.getElementsByClassName("columnbb");
-var elements = document.getElementsByClassName("columncb");
-var elements = document.getElementsByClassName("columnty");
-// Declare a "loop" variable
-var i;
-// Full-width images
-function one() {for (i = 0; i < elements.length; i++) {elements[i].style.flex = "100%";}}
-// Two images side by side
-function two() {for (i = 0; i < elements.length; i++) {elements[i].style.flex = "50%";}}
-// Four images side by side
-function four() {for (i = 0; i < elements.length; i++) {elements[i].style.flex = "25%";}}
-</script>
-<div class="container1">
-  <img src="images/SouthAfrican1864.jpg" alt="1864" style="transform-origin:50% 50%" width="180" height="160";> 
-<div class="container2"> 
-  <img src="images/Dr_Kaunda.jpg" alt="Dr Kaunda" style="transform-origin:70% 40%" width="180" height="160";> 
-<div class="container3"> 
-  <img src="images/mandela.jpg" alt="FF" style="transform-origin:50% 20%" width="140" height="110";></div> 
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/mandela.jpg">
+      <img src="images/mandela.jpg" width="150" height="100";> 
+    </a>
+    <div class="desc">NM-WS</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/mandela.jpg">
+      <img src="images/mandela.jpg" width="150" height="100";> 
+    </a>
+    <div class="desc">repeat</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+</div>
 </body>
-<style>
-.container1  {img display: inline-grid; outline: 2px solid red; overflow: hidden;  background: black; margin: 0; height: 20vh; display: grid; grid-auto-flow: column; grid-gap:20px;place-content: center; overflow: hidden;} 
-{width: 100px; transform: scale(1.5);}.container1:hover {overflow: visible; z-index: 2;}
-.container2  {img display: inline-grid; outline: 2px solid red; overflow: hidden;  background: black; margin: 0; height: 20vh; display: grid; grid-auto-flow: column; grid-gap:20px;place-content: center; overflow: hidden;}
- {width: 100px; transform: scale(1.5);}.container2:hover {overflow: visible; z-index: 2;}
-.container3  {img display: inline-grid; outline: 2px solid red; overflow: hidden;  background: black; margin: 0; height: 20vh; display: grid; grid-auto-flow: column; grid-gap:20px;place-content: center; overflow: hidden;}
- {width: 100px; transform: scale(1.5);}.container3:hover {overflow: visible; z-index: 2;}
-</style>
-</section>
+
 <section>
 <div>   <p style="background-size: 10% border:1px solid black; background-color: yellow; color: black; text-decoration: none; font size: 50%; text-alignment: center; . {image-container img {display:block; width: 100%; height:100%;}.overlay-text {position:absolute; top:50%; left:50%;transform: translate(-50%,-50%); border:2px white; font-afamily:arial; padding: 30px; margin:50px;backdrop-filter:blur(50px) saturate (600"> History has a significant role to play in shaping and reshaping societies. This section of the publication explores deeply the history of ZA and at times elsewhere. With this we aim to highlight the following; the journey to create what we today know as our local communities...</p> </div>
 </body>
