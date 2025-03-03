@@ -331,7 +331,7 @@ replayAnimations(); }, 8000); function replayAnimations() { var banner = documen
 <iframe src="https://www.youtube.com/embed/ifpSXLmK6m4" width="110" height="100"; class="lazyload"; position: relative; display:grid; frameborder="0"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div> <br> 
 <div id="column3"> 
-<iframe src="https://www.youtube.com/embed/kdxq0vA9YSU" width="110" height="100"; class="lazyload"; position: relative; display:grid; frameborder="0"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<ifram e src="https://www.youtube.com/embed/kdxq0vA9YSU" width="110" height="100"; class="lazyload"; position: relative; display:grid; frameborder="0"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <iframe src="https://www.youtube.com/embed/4yf_Mx4AeJs" width="110" height="100"; class="lazyload"; position: relative; display:grid; frameborder="0"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <iframe src="https://www.youtube.com/embed/FpLARC3n36I" width="110" height="100"; class="lazyload"; position: relative; display:grid; frameborder="0"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <iframe src="https://www.youtube.com/embed/1a8CfHAVY6U" width="110" height="100"; class="lazyload"; position: relative; display:grid; frameborder="0"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -361,41 +361,101 @@ replayAnimations(); }, 8000); function replayAnimations() { var banner = documen
 <div class="col-0 menu">
 <header class="block inner ">
 <nav> <li> <h1 style="background-size: 20%; border:1px solid black; background-color: white; color: black; font size: 20%; text-alignment: center; . {image-container img {display:block; width: 100%; height:80%;}.overlay-text {position:absolute; top:50%; left:50%;transform: translate(-50%,-50%); border:2px white; font-afamily:arial; padding: 30px; margin:50px;">History Corner</h1> </li> </nav>
-<li> <nav>  <h2 style="background-size: 20% border:1px solid black; background-color: white; color: black; font size: 20%; text-alignment: center; . {image-container img {display:block; width: 80%; height:100%;}.overlay-text {position:absolute; top:50%; left:50%;transform: translate(-50%,-50%); border:2px white; font-afamily:arial; padding: 30px; margin:50px ;"> In Pictures and Motion </h2> </li> </nav>
-<div class="row-j">
-<div class="responsive">
-<div class="video-grid">
-<div id="columnxxl"> 
-<iframe src="images/videoone.mp4"type="video/mp4"; width="100" height="100" class="lazyload";; controls autoplay; display:grid; frameborder="0"; webkitallowfullscreen;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen allowfullscreen></iframe>
-<div class="desc"><p style="background-size: 10% border:4px solid red; background-color: white; color: black; font size: 10%; text-alignment: center";>JHB</p> </div>
-<iframe src="images/madib.mp4"type="video/mp4"; width="100" height="100" class="lazyload"; controls autoplay; display:grid; frameborder="0"; webkitallowfullscreen ;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen allowfullscreen></iframe> 
-<div class="desc"><p style="background-size: 10% border:4px solid red; background-color: white; color: black; font size: 10%; text-alignment: center";>1990s</p> </div>
-</body>
-<style>
-.row-j {display: flex;} 
-.videos {display: flex; max-width: 100%; height: auto;}
-#columnxxl {width:100%;background-color: transparent;} 
+<section> <style>
+#heading { color: white; font-size: 20px; text-align: center; padding: 10px;}
+#container { display: grid; grid-template-columns: 2fr 1fr; gap: 15px; align-items: flex-start; padding: 5px 5%;}
+.container .main-video {background: black; border-radius: 5px; height: 300px; padding: 10px;}
+.container .main-video iframe {width: 100; border-radius: 5px; height: 200px;}
+.container .main-video .title {font-size: 24px; padding-top: 15px; padding-bottom: 15px; color: #333;}
+.container .video-list {overflow-x: hidden; background: red; border-radius: 5px; height: 520px; overflow-y: scroll;}
+.container .video-list::-webkit-scrollbar {width: 7px;}
+.container .video-list::-webkit-scrollbar-track {background: #ccc; border-radius: 50px;}
+.container .video-list::-webkit-scrollbar-thumb {background: #666; border-radius: 50px;}
+.container .video-list .vid{display: flex; align-items: center; gap: 15px; background: black; border-radius: 5px; margin: 10px; padding-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1); cursor: pointer;}
+.container .video-list .vid:hover {background: #eee;}
+.container .video-list .vid.active {background: black;}
+.container .video-list .vid.active .title {color: #fff; word-break: break-all;}
+.container .video-list .vid .title {color: #333; font-size: 17px;}
+@media (max-width: 300px) {.container {grid-template-columns: 1.5fr 1fr; padding: 10px;}}
+@media (max-width: 500px) {.container {grid-template-columns: 1fr;}}
 </style>
-</section> 
-<section>
+<body>
+<h3 class="heading"> History (in pictures and in motion)</h3>
+<div class="container">
+<div class="main-video">
+<div class="video">
+<iframe src="images/madib.mp4"type="video/mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"> 1990s</h3>
+</div> </div>
+<div class="video-list">
+<div class="vid active">
+<iframe src="images/videoone.mp4"type="video/mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+<h3 class="title">JHB</h3>
+          </div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+</div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+          </div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+</div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+          </div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+</div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+          </div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+</div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+          </div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+</div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+          </div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+</div>
+<div class="vid">
+<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 class="title"></h3>
+</div>
+</div>
+</div>
+</div>
+</body> </section> <section>
 <style>
-div.scroll-container {
-  background-color: black;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;style="float:left"; 
-}
-div.scroll-container img {
-  padding: 10px;
-}
+div.scroll-container {background-color: black; overflow: auto; white-space: nowrap; padding: 10px;style="float:left";}
+div.scroll-container img {padding: 10px;}
 </style>
 <body>
 <div class="scroll-container">
-  <img src="images/SouthAfrican1864.jpg" height="190" width="150";> 
-  <img src="images/Dr_Kaunda.jpg" height="190" width="150";>
-  <img src="images/mandela.jpg" height="190" width="150" ;>
-  <img src="images/mandela.jpg" height="190" width="150";> 
-  <img src="images/bacground.jfif" height="190" width="150";>
+<img src="images/SouthAfrican1864.jpg" height="190" width="150";> 
+<img src="images/Dr_Kaunda.jpg" height="190" width="150";>
+<img src="images/mandela.jpg" height="190" width="150" ;>
+<img src="images/mandela.jpg" height="190" width="150";> 
+<img src="images/bacground.jfif" height="190" width="150";>
+<img src="images/tiro.jfif" height="190" width="150";>
 </div>
 </body>
 <section> <body>
