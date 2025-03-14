@@ -361,86 +361,26 @@ replayAnimations(); }, 8000); function replayAnimations() { var banner = documen
 <div class="col-0 menu">
 <header class="block inner ">
 <nav> <li> <h1 style="background-size: 20%; border:1px solid black; background-color: white; color: black; font size: 20%; text-alignment: center; . {image-container img {display:block; width: 100%; height:80%;}.overlay-text {position:absolute; top:50%; left:50%;transform: translate(-50%,-50%); border:2px white; font-afamily:arial; padding: 30px; margin:50px;">History Corner</h1> </li> </nav>
-<style> #heading { color: white; font-size: 20px; text-align: center; padding: 10px;}
-#container { display: grid; grid-template-columns: 2fr 1fr; gap: 15px; align-items: flex-start; padding: 5px 5%;}
-.container .main-video {background: transparent; border-radius: 5px; height: 250px; padding: 10px;}
-.container .main-video iframe {width: 100; border-radius: 5px; height: 200px;}
-.container .main-video .title {font-size: 15px; padding-top: 10px; padding-bottom: 10px; color: #333;}
-.container .video-list {overflow-x: hidden; background: red; border-radius: 5px; height: 520px; overflow-y: scroll;}
-.container .video-list::-webkit-scrollbar {width: 7px;}
-.container .video-list::-webkit-scrollbar-track {background: #ccc; border-radius: 50px;}
-.container .video-list::-webkit-scrollbar-thumb {background: #666; border-radius: 50px;}
-.container .video-list .vid{display: flex; align-items: center; gap: 15px; background: transparent; border-radius: 5px; margin: 10px; padding-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1); cursor: pointer;}
-.container .video-list .vid:hover {background: #eee;}
-.container .video-list .vid.active {background: transparent;}
-.container .video-list .vid.active .title {color: #333; word-break: break-all;}
-.container .video-list .vid .title {color: #333; font-size: 17px;}
-@media (max-width: 600px) {.container {grid-template-columns: 1.5fr 1fr; padding: 10px;}}
-@media (max-width: 600px) {.container {grid-template-columns: 1fr;}}
-</style> </head>
+<style> 
+div.scroll-container1 {background-color: black; overflow: auto; white-space: nowrap; padding: 10px;style="float:left";}
+div.scroll-container1 img {padding: 10px;}
+</style> 
 <body>
-<h3 class="heading"> Pictures - Motion - Voice </h3>
-<div class="container">
-<div class="main-video">
-<div class="video"> 
-<iframe srcset="images/madib.mp4"type="video/mp4" title="YouTube video player" width="150"; height="100"; loading="lazy"; frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-<h3 class="title"> 1990s</h3>
-</div> </div>
-<div class="video-list">
-<div class="vid active">
-<iframe srcset="images/videoone.mp4"type="video/mp4" title="YouTube video player" width="150"; height="150"; loading="lazy"; frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
-<h3 class="title">JHB</h3>
-          </div>
-<div class="vid">
-<iframe srcset="https://cdn.jwplayer.com/players/oQcvqTrp-xS4RtpB7.html" title="YouTube video player" width="150"; height="150"; loading="lazy"; frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title">80s</h3>
-</div>
-<div class="vid">
-<iframe srcset="https://www.youtube-nocookie.com/embed/_kH_EZF0XqM?si=FcaqotvLQsI1jl4D" title="YouTube video player" width="150"; height="150"; loading="lazy"; frameborder="0" allow="accelerometer; autoplay; loop muted playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<h3 class="title">GA</h3>
-          </div>
-<div class="vid">
+<div class="scroll-container1">
+<iframe img src="images/madib.mp4"type="video/mp4" title="YouTube video player" width="150"; height="150"; loading="lazy"; frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe img src="images/videoone.mp4"type="video/mp4" title="YouTube video player" width="150"; height="150"; loading="lazy"; frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+<iframe img src="https://cdn.jwplayer.com/players/oQcvqTrp-xS4RtpB7.html" title="YouTube video player" width="150"; height="150"; loading="lazy"; frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe img src="https://www.youtube-nocookie.com/embed/_kH_EZF0XqM?si=FcaqotvLQsI1jl4D" title="YouTube video player" width="150"; height="150"; loading="lazy"; frameborder="0" allow="accelerometer; autoplay; loop muted playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <iframe  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title"></h3>
-</div>
-<div class="vid">
 <iframe  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title"></h3>
-          </div>
-<div class="vid">
 <iframe  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title"></h3>
-</div>
-<div class="vid">
 <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title"></h3>
-          </div>
-<div class="vid">
 <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; muted; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title"></h3>
-</div>
-<div class="vid">
 <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; muted;  playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title"></h3>
-          </div>
-<div class="vid">
 <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; muted playsinlineclipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title"></h3>
-</div>
-<div class="vid">
 <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; muted playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title"></h3>
-          </div>
-<div class="vid">
 <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; muted playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title"></h3>
-</div>
-<div class="vid">
 <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; muted playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class="title"></h3>
-</div>
-</div>
-</div>
 </div>
 </body> </section> <section>
 <style>
