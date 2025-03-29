@@ -345,7 +345,6 @@ div.scroll-container1 {background-color: transparent; overflow: auto; white-spac
 div.scroll-container1 img {padding: 10px;}
 </style>
 </section> 
-</section>
 <section> <body>
 <div class="aside">
 <div class="col-0 menu">
@@ -353,188 +352,135 @@ div.scroll-container1 img {padding: 10px;}
 <nav> <li> <h1 style="background-size: 20%; border:1px solid black; background-color: white; color: black; font size: 20%; text-alignment: center; . {image-container img {display:block; width: 100%; height:80%;}.overlay-text {position:absolute; top:50%; left:50%;transform: translate(-50%,-50%); border:2px white; font-afamily:arial; padding: 30px; margin:50px;">History Corner</h1> </li> </nav>
 <section>
 <style>
-#container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+#container { display: grid; grid-template-columns: 2fr 1fr;
   gap: 15px;
   align-items: flex-start;
-  padding: 5px 5%;
-}
-.container .main-video {
-  background: black;
-  border-radius: 5px;
-  height: 400px;
-  padding: 10px;
-}
-
-.container .main-video iframe {
-  width: 100%;
-  border-radius: 5px;
-  height: 300px;
-}
-.container .main-video .title {
-  font-size: 10px;
-  padding-top: 15px;
+  padding: 5px 5%;}
+.container .main-video { background: black; border-radius: 5px; height: 400px;
+  padding: 10px;}
+.container .main-video iframe { width: 100%; border-radius: 5px;
+  height: 300px;}
+.container .main-video .title {font-size: 10px; padding-top: 15px;
   padding-bottom: 15px;
-  color: whitesmoke;
-}
-.container .video-list {
-  overflow-x: hidden;
-  background: black;
+  color: whitesmoke;}
+.container .video-list {overflow-x: hidden; background: black;
   border-radius: 5px;
   height: 400px;
-  overflow-y: scroll;
-}
+  overflow-y: scroll;}
 .container .video-list::-webkit-scrollbar {
-  width: 7px;
-}
+  width: 7px;}
 .container .video-list::-webkit-scrollbar-track {
   background: black;
-  border-radius: 50px;
-}
+  border-radius: 50px;}
 .container .video-list::-webkit-scrollbar-thumb {
   background: #666;
-  border-radius: 50px;
-}
-
-.container .video-list .vid {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  background: red;
+  border-radius: 50px;}
+.container .video-list .vid {display: flex; align-items: center; gap: 15px; background: red;
   border-radius: 5px;
   margin: 10px;
   padding-top: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
+  cursor: pointer;}
 .container .video-list .vid:hover {
-  background: red;
-}
-.container .video-list .vid.active {
-  background: black;
-}
-.container .video-list .vid.active .title {
+  background: red;}
+.container .video-list .vid.active {background: black;}
+ .container .video-list .vid.active .title {
   color: whitesmoke;
-  word-break: break-all;
-}
+  word-break: break-all;}
 .container .video-list .vid .title {
   color: whitesmoke;
-  font-size: 17px;
-}
-
+  font-size: 17px;}
 @media (max-width: 991px) {
   .container {
     grid-template-columns: 1.5fr 1fr;
-    padding: 10px;
-  }
-}
+    padding: 10px;}}
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr;
-  }
-}
+    grid-template-columns: 1fr;}}
 </style>
-  <body>
-    <h3 class="heading"> Pictures Motion Voice </h3>
-    <div class="container">
-      <div class="main-video">
-        <div class="video">
-          <embed div class="embed-responsive embed-responsive "16by9"
-            src="images/madib.mp4"type="video/mp4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; width="110" height="100"; class="lazyload"; autoplay mute playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-          <h3 class="title">1990s</h3>
-        </div>
-      </div>
-        <div class="video-list">
-          <div class="vid active">
-            <embed div class="embed-responsive embed-responsive "16by9" 
-              src="images/videoone.mp4"
-              title="YouTube video player"
-              frameborder="0"
+<body>
+<h3 class="heading"> Pictures Motion Voice </h3>
+<div class="container">
+<div class="main-video">
+<div class="video">
+<embed div class="embed-responsive embed-responsive "16by9" src="images/madib.mp4"type="video/mp4" title="YouTube video player" frameborder="0" allow="accelerometer; width="110" height="100"; class="lazyload"; autoplay mute playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<h3 class="title">1990s</h3>
+</div>
+</div>
+<div class="video-list">
+<div class="vid active">
+<embed div class="embed-responsive embed-responsive "16by9" src="images/videoone.mp4" title="YouTube video player" frameborder="0"
               allow="accelerometer; width="110" height="100"; class="lazyload"; autoplay mute playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            <h3 class="title">19th Century JHB </h3>
-          </div>
-          <div class="vid">
-            <embed div class="embed-responsive embed-responsive "16by9" 
+              allowfullscreen>
+<h3 class="title">19th Century JHB </h3>
+</div>
+<div class="vid">
+<embed div class="embed-responsive embed-responsive "16by9" 
               src="https://cdn.jwplayer.com/players/oQcvqTrp-xS4RtpB7.html"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; width="110" height="100"; class="lazyload"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            <h3 class="title">SA-US 80s </h3>
-          </div>
-          <div class="vid">
-            <embed div class="embed-responsive embed-responsive "16by9"
+                allowfullscreen>
+<h3 class="title">SA-US 80s </h3>
+</div>
+<div class="vid">
+<embed div class="embed-responsive embed-responsive "16by9"
               src="https://www.youtube-nocookie.com/embed/_kH_EZF0XqM?si=FcaqotvLQsI1jl4D"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer;width="110" height="100"; class="lazyload"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            <h3 class="title">GA</h3>
-          </div>
-          <div class="vid">
-            <embed div class="embed-responsive embed-responsive
+               allowfullscreen>
+<h3 class="title">GA</h3>
+</div>
+<div class="vid">
+<embed div class="embed-responsive embed-responsive
               src=""
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; width="110" height="100"; class="lazyload"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            <h3 class="title"></h3>
-          </div>
-          <div class="vid">
-            <embed div class="embed-responsive embed-responsive
+               allowfullscreen>
+<h3 class="title"></h3>
+</div>
+<div class="vid">
+<embed div class="embed-responsive embed-responsive
               src=""
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; width="110" height="100"; class="lazyload"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            <h3 class="title"></h3>
-          </div>
-          <div class="vid">
-            <embed div class="embed-responsive embed-responsive
+              allowfullscreen>
+<h3 class="title"></h3>
+</div>
+<div class="vid">
+<embed div class="embed-responsive embed-responsive
               src=""
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; width="110" height="100"; class="lazyload"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            <h3 class="title"></h3>
-          </div>
-          <div class="vid">
-            <embed div class="embed-responsive embed-responsive
+             allowfullscreen>
+<h3 class="title"></h3>
+</div>
+<div class="vid">
+<embed div class="embed-responsive embed-responsive
               src=""
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; width="110" height="100"; class="lazyload"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            <h3 class="title"></h3>
-          </div>
-          <div class="vid">
-            <embed div class="embed-responsive embed-responsive
+                allowfullscreen>
+<h3 class="title"></h3>
+</div>
+<div class="vid">
+<embed div class="embed-responsive embed-responsive
               src=""
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; width="110" height="100"; class="lazyload"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            <h3 class="title"></h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body> </section> <section>
+              allowfullscreen>
+<h3 class="title"></h3>
+</div>
+</div>
+</div>
+</div>
+</body> </section> <section>
 <style>
 div.scroll-container {background-color: black; overflow: auto; white-space: nowrap; padding: 10px;style="float:left";}
 div.scroll-container img {padding: 10px;}
