@@ -705,8 +705,9 @@ a.channel:hover {
 .icon-active {
   filter: sepia(100%) hue-rotate(150deg) saturate(400%);
 }
-
-#playlist {
+</style>
+<style>
+*#playlist {
   top: 50%;
   left: 50%;
   width: 80vw;
@@ -760,7 +761,8 @@ a.channel:hover {
   background: url()
     no-repeat center;
   background-size: 50%;
-}
+} </style>
+<style>
 
 #lower-info {
   display: flex;
@@ -796,8 +798,8 @@ a.channel:hover {
 #vli-videos {
   flex: 7;
   overflow: auto;
-}
-
+} </style>
+<style>
 .video-con {
   display: flex;
   cursor: pointer;
@@ -876,7 +878,8 @@ const v_cons = qsa(".video-con"),
   drop_icon = qs("#drop-icon"),
   video_list = qs("#v-list"),
   display = qs("#display-frame");
-
+</script>
+<script>
 // activate container
 function activate(con) {
   deactivateAll();
