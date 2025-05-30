@@ -572,37 +572,32 @@ var media = [
 
   		.title {
   			width: 100%;
-  			max-width: 854px;
+  			max-width: 500px;
   			margin: 0 auto;
   		}
 
   		.caption {
   			width: 100%;
-  			max-width: 854px;
+  			max-width: 500px;
   			margin: 0 auto;
   			padding: 20px 0;
   		}
 
   		.vid-main-wrapper {
   			width: 100%;
-  			max-width: 1100px;
+  			max-width: 550px;
   			min-width: 440px;
   			background: #fff;
   			margin: 0 auto;
   		}
-
-
-  		/*  VIDEO PLAYER CONTAINER
- 		############################### */
   		.vid-container {
 		    position: relative;
 		    padding-bottom: 52%;
 		    padding-top: 30px; 
 		    height: 0; 
-        width:70%;
+        width:50%;
         float:left;
 		}
-		 
 		.vid-container iframe,
 		.vid-container object,
 		.vid-container embed {
@@ -612,31 +607,23 @@ var media = [
 		    width: 100%;
 		    min-height: 360px;
 		}
-
-
-		/*  VIDEOS PLAYLIST 
- 		############################### */
 		.vid-list-container {
 			width: 30%;
       height:360px;
 			overflow: hidden;
       float:right;
 		}
-
     .vid-list-container:hover, .vid-list-container:focus {
        overflow-y: auto;
      }
-
 		ol#vid-list {
       margin:0;
       padding:0;
       background: red;
 		}
-
     ol#vid-list li {
 		  list-style: none;
     }
-
     ol#vid-list li a {
       text-decoration: none;
       background-color: red;
@@ -644,16 +631,13 @@ var media = [
       display:block;
       padding:10px;
     }
-
     ol#vid-list li a:hover {
       background-color:#666666
     }
-
 		.vid-thumb {
       float:left;
 			margin-right: 8px;
 		}
-
     .active-vid { 
       background:#3A3A3A;
     }
@@ -663,7 +647,6 @@ var media = [
 			font-size: 13px;
 			margin-top:5px;
 		}
-
 
 		@media (max-width: 624px) {
 			body {
@@ -702,8 +685,6 @@ var media = [
 			}
 
 		}
-
-
 </style> <script>
 $(document).ready(function () {
   $('.vid-item').each(function(index){
