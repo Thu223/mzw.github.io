@@ -817,10 +817,15 @@ $(document).ready(function () {
 .grid {display: grid; grid-auto-columns: 230px; /* all columns width equal to 230px */ grid-template-rows: repeat(2, 153px); /* 2 rows */ grid-auto-flow: column; /* column flow */ gap: .5rem; overflow-x: scroll;}
 .grid-item {border: 1px solid whitesmoke;}
 .grid-item:nth-child(7n + 1) {grid-row: span 2; /* take 2 rows */ grid-column: span 2; /* tale 2 columns */ background-color: black}
+.zoom-img {width: 150px; height: 190px; overflow: none;}
+.zoom-img img {width: 100%; transition: width 0.25s ease;}
+.zoom-img img:hover {width: 300px;}
+
 </style>
 <body>
 <div class="horizontal-scroll-container">
 <div class="grid">
+<div class="zoom-img">
 <div class="grid-item"><img source src="images/SouthAfrican1864.jpg" height="190" width="150";></div>
 <div class="grid-item"><img source src="images/Dr_Kaunda.jpg" height="190" width="150";></div>
 <div class="grid-item"><img source src="images/mandela.jpg" height="190" width="150";></div>
