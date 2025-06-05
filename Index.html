@@ -287,7 +287,7 @@ replayAnimations(); }, 8000); function replayAnimations() { var banner = documen
 <marquee class="marq" bgcolor="transparent" behavior="slide" onbounce direction="right" loop=""; frameborder="0" height="100" width="170";> <p style="font size: 3%; color: gold;"> Place Ad </p> </marquee> 
 </picture> </div> <br> <br>
 <div id="columnb">
-<iframe div class="embed-responsive" "16by9" source src="https://www.youtube.com/embed/zAZqlaDCLSI" class="lazyload"; width="80px" height="300px"; position: relative; display:grid; style="border:1px solid black"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<embed div class="embed-responsive" "16by9" source src="https://www.youtube.com/embed/zAZqlaDCLSI" class="lazyload"; width="80px" height="300px"; position: relative; display:grid; style="border:1px solid black"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" webkitallowfullscreen mozallowfullscreen allowfullscreen></embeded>
 </body> 
 <style>
 .row-a {display: flex;flex-wrap:wrap;} 
@@ -319,6 +319,45 @@ var media = [
   video.play();
  }</script>
 </section>
+<section> <body>
+<div class="loader-line"></div>
+</body> <style>
+
+.loader-line {
+    width: 0;
+    height: 2px;
+    background-color:red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: loaderAppear 2s linear 1s forwards, loaderAnim 5s linear infinite;
+    opacity: 0.4;
+}
+
+@keyframes loaderAppear {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes loaderAnim {
+    0% {
+        left: 50%;
+        right: 50%;
+        width: 0;
+    }
+    100% {
+        left: 1%;
+        right: 99%;
+        width: 100%;
+
+    }
+}
+
+</style> </body> <section> 
 <section>
 <body>
 <h1 style="background-size: 10% border:1px solid black; background-color: black; color: white; font size: 50%; text-alignment: center; border:2px white; font-afamily:arial; padding: 30px; margin:50px auto;"> YouTube Mixes </h1><div class="vid-main-wrapper clearfix">
@@ -835,12 +874,12 @@ $(document).ready(function () {
 <div class="zoom-img">
 <div class="grid-item"><img source src="images/SouthAfrican1864.jpg" height="190" width="150";><h3 class="title">1864</h3></div>
 <div class="grid-item"><img source src="images/Dr_Kaunda.jpg" height="190" width="150";><h3 class="title">Dr Kaunda</h3></div>
-<div class="grid-item"><img source src="images/mandela.jpg" height="190" width="150";><h3 class="title">RI</h3></div>
-<div class="grid-item"><img source src="images/mandela.jpg" height="190" width="150";><h3 class="title">RI</h3></div>
+<div class="grid-item"><img source src="images/mandela.jpg" height="190" width="150";><h3 class="title">Robben Island </h3></div>
+<div class="grid-item"><img source src="images/mandela.jpg" height="190" width="150";><h3 class="title">Robben Island</h3></div>
 <div class="grid-item"><img source src="images/tiro.jfif" height="190" width="150";><h3 class="title">O Tiro</h3></div>
 <div class="grid-item"><img source src="images/robben.jfif" height="190" width="150";><h3 class="title">Rivonia</h3></div>
 <div class="grid-item"><img source src="images/KingShaka.jpg" height="190" width="150";><h3 class="title">King Shaka</h3></div>
-<div class="grid-item"><img source src="images/Ted_Kennedy_1979.jpg" height="190" width="150";><h3 class="title">SenatorTKennedy</h3></div>
+<div class="grid-item"><img source src="images/Ted_Kennedy_1979.jpg" height="190" width="150";><h3 class="title">Sen Ted Kennedy</h3></div>
 <div class="grid-item"><img source src="images/OR.jfif" height="190" width="150";><h3 class="title">OR</h3></div>
 <div class="grid-item"><img source src="images/JB.jfif" height="190" width="150";><h3 class="title">Jabu Ndlovu</h3></div>
 <div class="grid-item"><img source src="images/KK.jfif" height="190" width="150";><h3 class="title">Dr KK</h3></div>
@@ -848,12 +887,12 @@ $(document).ready(function () {
 <div class="grid-item"><img source src="images/langtwo.jpg" height="190" width="150";><h3 class="title"></h3></div>
 <div class="grid-item"><img source src="images/langthree.jpg" height="190" width="150";><h3 class="title"></h3></div>
 <div class="grid-item"><img source src="images/KingZulu.jpg" height="190" width="150";><h3 class="title">King Dinizulu</h3></div>
-<div class="grid-item"><img source src="images/Kingjnr.jpg" height="190" width="150";><h3 class="title">Martin King </h3></div>
+<div class="grid-item"><img source src="images/Kingjnr.jpg" height="190" width="150";><h3 class="title">Rev Martin L King </h3></div>
 <div class="grid-item"><img source src="images/BColenso.jpg" height="190" width="150";><h3 class="title">Bishop Colenso</h3></div>
-<div class="grid-item"><img source src="images/KingFaku.jpg" height="190" width="150";><h3 class="title"></h3>King Faku</div>
-<div class="grid-item"><img source src="images/Diba.jpg" height="190" width="150";><h3 class="title">VE</h3></div>
-<div class="grid-item"><img source src="images/Diba1.jpg" height="190" width="150";><h3 class="title">VE</h3></div>
-<div class="grid-item"><img source src="images/Vote.jpg" height="190" width="150";><h3 class="title">VE</h3></div>
+<div class="grid-item"><img source src="images/KingFaku.jpg" height="190" width="150";><h3 class="title">King Faku</h3></div>
+<div class="grid-item"><img source src="images/Diba.jpg" height="190" width="150";><h3 class="title"></h3></div>
+<div class="grid-item"><img source src="images/Diba1.jpg" height="190" width="150";><h3 class="title"></h3></div>
+<div class="grid-item"><img source src="images/Vote.jpg" height="190" width="150";><h3 class="title"></h3></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
