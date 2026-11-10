@@ -1,1 +1,562 @@
-<h4> Coming soon </h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>2 Tech Ltd | Web Design & Development</title>
+
+<meta name="description" content="2 Tech Ltd creates modern, responsive websites and digital experiences for businesses, organisations and individuals.">
+
+<meta name="theme-color" content="#080808">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: 1px solid #222;
+    padding: 22px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #e5252a;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.nav-links a:hover {
+    color: #e5252a;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 90px 0;
+    background:
+        radial-gradient(ellipse at 85% 45%,
+        #252525 0%, #080808 55%);
+}
+
+.eyebrow {
+    color: #ed3035;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: clamp(43px, 7vw, 82px);
+    line-height: 1.05;
+    letter-spacing: -4px;
+    max-width: 850px;
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    color: #ed3035;
+}
+
+.hero p {
+    max-width: 620px;
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 27px;
+    background: #e5252a;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background .2s;
+}
+
+.button:hover {
+    background: #b71920;
+}
+
+.button-outline {
+    display: inline-block;
+    padding: 13px 25px;
+    border: 1px solid #555;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+.button-outline:hover {
+    border-color: #ed3035;
+}
+
+/* INTRO */
+
+.intro {
+    padding: 85px 0;
+    background: #111;
+}
+
+.section-label {
+    color: #ed3035;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.intro h2,
+.section-heading {
+    font-size: clamp(30px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.intro p {
+    color: #aaa;
+    max-width: 780px;
+    font-size: 16px;
+}
+
+/* SERVICES */
+
+.services {
+    padding: 90px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: #151515;
+    border: 1px solid #292929;
+    padding: 32px 25px;
+    min-height: 220px;
+}
+
+.service-number {
+    color: #ed3035;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.service-card h3 {
+    font-size: 21px;
+    margin: 20px 0 12px;
+}
+
+.service-card p {
+    color: #999;
+    font-size: 14px;
+}
+
+/* APPROACH */
+
+.approach {
+    background: #111;
+    padding: 85px 0;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.approach p {
+    color: #aaa;
+    margin-top: 15px;
+}
+
+.approach-list {
+    border-left: 2px solid #e5252a;
+    padding-left: 25px;
+}
+
+.approach-list div {
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+/* PROJECT */
+
+.project {
+    padding: 90px 0;
+}
+
+.project-card {
+    background: #151515;
+    border: 1px solid #292929;
+    padding: 40px;
+    margin-top: 35px;
+}
+
+.project-card h3 {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.project-card p {
+    color: #aaa;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: #e5252a;
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: #ffe5e5;
+    margin-bottom: 25px;
+}
+
+.contact .button {
+    background: #080808;
+}
+
+.contact .button:hover {
+    background: #292929;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    border-top: 1px solid #222;
+}
+
+footer strong {
+    color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .nav-links {
+        gap: 13px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 490px;
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 430px) {
+    .nav-links {
+        gap: 10px;
+        font-size: 11px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .button-outline {
+        margin: 12px 0 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">2 TECH<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container">
+
+        <div class="eyebrow">2 Tech Ltd | Digital Solutions</div>
+
+        <h1>
+            We Design.<br>
+            We Develop.<br>
+            <span>We Build Digital.</span>
+        </h1>
+
+        <p>
+            Your ideas deserve more than just a website.
+            We create modern digital experiences that help
+            businesses, organisations and individuals
+            establish their presence online.
+        </p>
+
+        <a href="#services" class="button">
+            Explore Our Services
+        </a>
+
+        <a href="#projects" class="button-outline">
+            Our Projects
+        </a>
+
+    </div>
+</section>
+
+<section class="intro" id="about">
+    <div class="container">
+
+        <div class="section-label">WHO WE ARE</div>
+
+        <h2>Technology meets creativity.</h2>
+
+        <p>
+            2 Tech Ltd is focused on designing and developing
+            modern websites and digital solutions.
+
+            We believe every business, organisation and
+            individual should have access to a professional
+            online presence.
+
+            From the first idea to the finished website,
+            we turn concepts into practical digital experiences.
+        </p>
+
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="container">
+
+        <div class="section-label">WHAT WE DO</div>
+
+        <h2 class="section-heading">
+            Digital solutions built around you.
+        </h2>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-number">01 / DESIGN</div>
+                <h3>Website Design</h3>
+                <p>
+                    Clean, attractive and professional website
+                    designs that give your brand a strong
+                    online identity.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">02 / DEVELOPMENT</div>
+                <h3>Web Development</h3>
+                <p>
+                    Responsive and functional websites
+                    developed for desktop, tablets and
+                    mobile devices.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">03 / DIGITAL</div>
+                <h3>Custom Solutions</h3>
+                <p>
+                    Practical digital tools, interactive
+                    features and tailored website
+                    functionality.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="approach">
+    <div class="container">
+
+        <div class="approach-grid">
+
+            <div>
+                <div class="section-label">OUR APPROACH</div>
+
+                <h2 class="section-heading">
+                    Simple ideas.<br>
+                    Powerful execution.
+                </h2>
+
+                <p>
+                    Good technology should work for people.
+                    Our focus is on building websites that
+                    are easy to use, visually appealing and
+                    accessible across devices.
+                </p>
+            </div>
+
+            <div class="approach-list">
+                <div>01. Modern and professional design</div>
+                <div>02. Mobile-first development</div>
+                <div>03. User-friendly experiences</div>
+                <div>04. Practical digital functionality</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="project" id="projects">
+    <div class="container">
+
+        <div class="section-label">OUR WORK</div>
+
+        <h2 class="section-heading">
+            Ideas brought to life.
+        </h2>
+
+        <div class="project-card">
+
+            <div class="section-label">DIGITAL PROJECT</div>
+
+            <h3>Mzansi Municipal Weekly</h3>
+
+            <p>
+                A digital platform bringing together
+                municipal information, community voices,
+                entertainment, learning and opportunities.
+
+                An example of how digital platforms can
+                bring different experiences together.
+            </p>
+
+            <a href="https://mzweekly.co.za"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="button">
+                Visit MZWeekly
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+
+        <h2>Have an idea?</h2>
+
+        <p>
+            Let's turn your vision into a digital reality.
+        </p>
+
+        <a href="mailto:info@mzweekly.co.za"
+           class="button">
+            Start a Conversation
+        </a>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <strong>2 TECH LTD</strong>
+        <p>Web Design & Development | Digital Solutions</p>
+        <p>© <span id="year"></span> 2 Tech Ltd. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
